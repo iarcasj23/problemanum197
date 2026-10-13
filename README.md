@@ -29,3 +29,11 @@ Antes de analizar si hay vocales o no, debemos determinar una metodo para poder 
 
 ### X'-> f(x)' = X''
 #### Logica de ejecución
+- Se nos pide que:
+Dada una cadena de caracteres, mostrar el primer y el último carácter, después el segundo y el penúltimo, y así sucesivamente hasta que se crucen los contadores.
+
+Para poder hacer esto, primero debemos determinar la longitud de la cadena de caracteres y separar todos los caracteres en un array, de esta manera podremos acceder a cada posición de la cadena.
+
+La manera que considero más eficiente es utilizar dos contadores, uno que empiece en la posición 0 y otro en la última posición del array, que corresponde a la longitud de la cadena menos 1.
+
+Mientras los contadores no se crucen, iremos mostrando el carácter de la primera posición y el de la última. Después, aumentaremos en 1 el contador inicial y disminuiremos en 1 el contador final, repitiendo el proceso hasta que el contador inicial sea mayor que el contador final.
