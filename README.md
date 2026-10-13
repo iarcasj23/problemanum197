@@ -27,6 +27,45 @@ La manera que considero mas eficiente, es determinar en una array y luego, compa
 
 Antes de analizar si hay vocales o no, debemos determinar una metodo para poder leer todos los caracteres y como nos piden que tenemos que remplazar la cadena de caracteres de consonantes por su imagen especular, debemos guardar todos los caracteres en una variable antes de la vcal.
 
+Diagrama de flujo + Pseudocodigo:
+
+1. Guardar en una array los caracteres que usaremos como delimitadores(Vocales).
+
+> Array Vocales = [a,e,i,o,u]
+
+2. Buscar la longitud de caracteres de la cadena de entrada y guardarlo en una variable.
+
+> Variable LongitudCadena = función contar(Cadena)
+
+3. Dividir la cadena de caracteres y guardar los caracteres en un array. 
+
+> Array Caracteres[] = función cortar (Cadena)
+
+4. Recorrer cada elemento de la array de caracteres 
+
+> Foreach Caracter in Caracteres[]{}
+
+5. Analizar si el caracter que estamos leyendo es Vocal o no (Si pertenece a la array de vocales) recorriendo el array principal de las vocales. 
+
+> Foreach Vocal in Vocales[]{
+> 	if (Caracter = Vocal){}
+> }
+
+6. Analizamos 2 situaciones
+	1. Si el caracter NO es vocal:
+		1. Guardamos el caracter en una variable
+	2. Si el caracter es vocal:
+		1. Cojemos el caracter o los caracteres guardados en la variable
+		2. Lo invertimos
+> if (Caracter != vocal){
+> 	Variable CadenaConsonantes .= Caracter
+> }
+> else{
+> 	Variable CadenaInvertida = funcion Invertir(CadenaConsonantes)
+> } 
+
+
+
 ### X'-> f(x)' = X''
 #### Logica de ejecución
 - Se nos pide que:
